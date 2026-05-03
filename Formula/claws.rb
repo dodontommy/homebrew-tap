@@ -1,25 +1,25 @@
 class Claws < Formula
   desc "TUI multiplexer for Claude Code sessions"
-  homepage "https://github.com/dodontommy/multi-claude"
-  version "0.1.6"
+  homepage "https://github.com/dodontommy/claws"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/dodontommy/multi-claude/releases/download/v0.1.6/claws-aarch64-apple-darwin.tar.xz"
-      sha256 "bab6cb8229fe98d6bc789a9631a32f8587f23de9ff4a923335c30f00f0590f83"
+      url "https://github.com/dodontommy/claws/releases/download/v0.2.0/claws-aarch64-apple-darwin.tar.xz"
+      sha256 "d30cc210ae009a9b471cc24b8c4a622ca80a69a20c01fcc925e0af2069e37ca6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dodontommy/multi-claude/releases/download/v0.1.6/claws-x86_64-apple-darwin.tar.xz"
-      sha256 "a3016b5bb52d787722a5384f38be82d89ec2ec05e259e79c88777c5b101fd1ed"
+      url "https://github.com/dodontommy/claws/releases/download/v0.2.0/claws-x86_64-apple-darwin.tar.xz"
+      sha256 "941c838aaca846a17047118b239c2b8c6614d5bcfe86f70920939c24fcc00b74"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/dodontommy/multi-claude/releases/download/v0.1.6/claws-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "6d6aa3cec331a844a97b7ddd916739b11d0a78bb4f083bad90f862cd4cf425e6"
+      url "https://github.com/dodontommy/claws/releases/download/v0.2.0/claws-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f45accd7357c18d9492b983c2fefcd15762e571a42a6e401603d89ee1171d90e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dodontommy/multi-claude/releases/download/v0.1.6/claws-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c80c0fd0a26e515288f287c1c9c38b9548e86f1501c569bef6447ba41e1d964e"
+      url "https://github.com/dodontommy/claws/releases/download/v0.2.0/claws-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ddabc0a0f3810bbb6924108678e8a2f93e2a2294ad49f3d5caa7599a3f526fda"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
