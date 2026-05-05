@@ -1,25 +1,25 @@
 class ClawsTui < Formula
   desc "TUI multiplexer for Claude Code sessions"
   homepage "https://github.com/dodontommy/claws-tui"
-  version "0.4.0"
+  version "0.4.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/dodontommy/claws-tui/releases/download/v0.4.0/claws-tui-aarch64-apple-darwin.tar.xz"
-      sha256 "e4da71003c541dcaeafe8b2e976ba32540f00392ed99202a49a561e36fafdad4"
+      url "https://github.com/dodontommy/claws-tui/releases/download/v0.4.1/claws-tui-aarch64-apple-darwin.tar.xz"
+      sha256 "552d264e935b020559d9c32c5b70c90d652eaa1d6d367ec9395a62d665ddb09f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dodontommy/claws-tui/releases/download/v0.4.0/claws-tui-x86_64-apple-darwin.tar.xz"
-      sha256 "d97b8b43396d838e5f127c68affe8384b5b1b52beee19e9ee75f863aecede9ef"
+      url "https://github.com/dodontommy/claws-tui/releases/download/v0.4.1/claws-tui-x86_64-apple-darwin.tar.xz"
+      sha256 "e454ace3971db6bdad8f147cda0c6160f28768fccb055ef22e16c7d748ed8c9f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/dodontommy/claws-tui/releases/download/v0.4.0/claws-tui-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "2fd2f83122e38efd116cd8227b58431c9ab4167451d70a7d1b208bf5873e816c"
+      url "https://github.com/dodontommy/claws-tui/releases/download/v0.4.1/claws-tui-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c1ab1bd94bb7da7a0bff6b4a491fe44e60e34bb747a964031bcd1be6358d0a08"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dodontommy/claws-tui/releases/download/v0.4.0/claws-tui-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0c7375a7596a69acabf3f1ecc0b1c0244e743c67f3c200393fef8800ee565241"
+      url "https://github.com/dodontommy/claws-tui/releases/download/v0.4.1/claws-tui-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b345e0e5a5c97c3bceaab20969a559f7cdd8c7a050fb8d3d7e06b9321501c21d"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
