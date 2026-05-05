@@ -1,7 +1,17 @@
 class Claws < Formula
   desc "TUI multiplexer for Claude Code sessions"
-  homepage "https://github.com/dodontommy/claws"
+  homepage "https://github.com/dodontommy/claws-tui"
   version "0.3.6"
+
+  # The package was renamed to `claws-tui` in v0.4.0 (the unsuffixed
+  # `claws` slot collided with an unrelated AWS TUI). Old install
+  # commands still work — GitHub redirects the rename, so the v0.3.6
+  # tarball URLs below resolve correctly — but new releases are only
+  # published under the `claws-tui` formula. This formula stays pinned
+  # at 0.3.6 as a soft landing for legacy `brew install dodontommy/tap/claws`
+  # invocations; switch to `claws-tui` to get current releases.
+  deprecate! date: "2026-05-05", because: "renamed to `claws-tui`. Run `brew install dodontommy/tap/claws-tui` for v0.4.0 and beyond"
+
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/dodontommy/claws/releases/download/v0.3.6/claws-aarch64-apple-darwin.tar.xz"
